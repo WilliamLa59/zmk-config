@@ -95,10 +95,19 @@
         Gaming {
             display-name = "Game";
             bindings = <
-            &kp Z           &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4    &trans  &trans  &trans  &trans  &trans
-            &kp TAB         &kp Q         &kp W         &kp E         &kp R           &trans  &trans  &trans  &trans  &trans
-&kp ESCAPE  &kp LEFT_SHIFT  &kp A         &kp S         &kp D         &kp F           &trans  &trans  &trans  &trans  &trans  &to 0
-                                          &kp C         &kp LCTRL     &kp SPACE       &trans  &trans  &trans
+       &kp ESC         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4    &trans  &trans  &trans  &trans  &trans
+       &kp TAB         &kp Q         &kp W         &kp E         &kp R           &trans  &trans  &trans  &trans  &trans
+&sl 5  &kp LEFT_SHIFT  &kp A         &kp S         &kp D         &kp F           &trans  &trans  &trans  &trans  &trans  &to 0
+                                     &sl 5         &kp LCTRL     &kp SPACE       &trans  &trans  &trans
+            >;
+        };
+
+        GamingPlus {
+            bindings = <
+        &trans  &kp Z   &kp X   &kp C   &kp V     &trans  &trans  &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
