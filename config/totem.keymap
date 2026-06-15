@@ -85,9 +85,9 @@
         Fun {
             display-name = "Fun";
             bindings = <
-        &bootloader  &trans  &trans  &trans  &to 4     &trans  &trans  &trans  &kp END  &kp F1
-        &trans       &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans   &kp F10
-&trans  &trans       &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans   &kp F20  &kp F7
+        &bootloader  &trans  &trans  &trans  &to 4     &trans  &kp F7  &kp F8  &kp F9  &kp F10
+        &trans       &trans  &trans  &trans  &trans    &trans  &kp F4  &kp F5  &kp F6  &kp F11
+&trans  &trans       &trans  &trans  &trans  &trans    &trans  &kp F1  &kp F2  &kp F3  &kp F12  &trans
                              &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
@@ -96,18 +96,27 @@
             display-name = "Game";
             bindings = <
          &kp ESC         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4    &trans  &trans  &trans  &trans  &trans
-         &sl 5           &kp Q         &kp W         &kp E         &kp R           &trans  &trans  &trans  &trans  &trans
+         &sl 6           &kp Q         &kp W         &kp E         &kp R           &trans  &trans  &trans  &trans  &trans
 &kp TAB  &kp LEFT_SHIFT  &kp A         &kp S         &kp D         &kp F           &trans  &trans  &trans  &trans  &trans  &to 0
                                        &sl 5         &kp LCTRL     &kp SPACE       &trans  &trans  &trans
             >;
         };
 
-        GamingPlus {
+        GamingPlus_A {
             bindings = <
         &trans  &kp Z   &kp X   &kp C   &kp V     &trans  &trans  &trans  &trans  &trans
         &trans  &trans  &trans  &trans  &kp G     &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &kp B     &trans  &trans  &trans  &trans  &trans  &trans
                         &trans  &trans  &trans    &trans  &trans  &trans
+            >;
+        };
+
+        GamingPlus_B {
+            bindings = <
+        &trans  &kp N5  &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8    &trans  &trans  &trans  &trans  &trans
+        &trans  &trans  &trans        &trans        &trans          &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans        &trans        &trans          &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans        &trans        &trans          &trans  &trans  &trans
             >;
         };
     };
